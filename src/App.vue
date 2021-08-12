@@ -1,0 +1,186 @@
+<template>
+  <nav class="nav">
+    <img class="logo" src="./assets/logo.png" alt="" />
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon">icon</span></label>
+    <ul class="menu">
+      <li><a href="#work">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#careers">Mes travaux</a></li>
+      <li><a href="#contact">Me contacter</a></li>
+    </ul>
+  </nav>
+  <br><br>
+  <HelloWorld msg="Welcome to Your Vue.js App" />
+</template>
+
+<script>
+import HelloWorld from "./components/HelloWorld.vue";
+
+export default {
+  name: "App",
+  components: {
+    HelloWorld,
+  },
+};
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #6a6969;
+}
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background: #333333 url(./assets/page-bg.jpg);
+}
+
+a {
+  color: #000;
+}
+
+/* nav */
+
+.nav {
+  background-color: #282828;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  margin: 0;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #282828;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+/*Animation li menu*/
+.nav li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  margin-top: 4px;
+  opacity: 0;
+}
+
+.nav a:hover::after {
+  opacity: 1;
+}
+
+.nav .logo {
+  display: block;
+  float: left;
+  width: 50px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* menu */
+
+.nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.nav .menu-icon {
+  cursor: pointer;
+  float: right;
+  color: white;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.nav .menu-icon .navicon {
+  background: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+  color: #282828;
+}
+
+.nav .menu-icon .navicon:before,
+.nav .menu-icon .navicon:after {
+  background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.nav .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.nav .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.nav .menu-btn {
+  display: none;
+}
+
+.nav .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 426px) {
+  .nav li {
+    float: left;
+  }
+  .nav li a {
+    padding: 20px 30px;
+  }
+  .nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .nav .menu-icon {
+    display: none;
+  }
+}
+</style>
