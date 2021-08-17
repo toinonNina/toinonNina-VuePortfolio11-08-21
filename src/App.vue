@@ -4,34 +4,35 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon">icon</span></label>
     <ul class="menu">
-      <li><a href="#work">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#careers">Mes travaux</a></li>
+      <li><a href="#propos">À propos</a></li>
+      <li><a href="#projets">Projets</a></li>
       <li><a href="#contact">Me contacter</a></li>
     </ul>
   </nav>
   <br><br>
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+
+  <Home />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Home from "@/section/Home.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Home,
   },
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #6a6969;
+  color: #a3a3a3;
+  font-size: 16px;
 }
 body {
   margin: 0;
@@ -51,6 +52,7 @@ a {
   position: fixed;
   width: 100%;
   margin: 0;
+  z-index: 1;
 }
 
 .nav ul {
@@ -165,14 +167,13 @@ a {
   top: 0;
 }
 
-/* 48em = 768px */
-
-@media (min-width: 426px) {
+@media (min-width: 930px) {
   .nav li {
     float: left;
   }
   .nav li a {
     padding: 20px 30px;
+    font-size: 16px;
   }
   .nav .menu {
     clear: none;
