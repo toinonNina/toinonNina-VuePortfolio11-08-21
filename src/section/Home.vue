@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
 
     <Header />
     <h2 id="propos" class="titlesection">À Propos</h2>
@@ -18,7 +18,7 @@
             J'ai décider d'allier mon loisir dans le domaine professionnel et pour cela j'ai fait une formation de dévellopeuse web chez openclassrooms. Sur ce portfolio voici mes réalisations .
             Je suis une personne motivée, patiente, avec une capacité d'adaptation, d'autonomie et capable de travailler en équipe.
           </p><br />
-          <a href="https://drive.google.com/file/d/1ThiIFKdhzAgaQP_vrHg0aTVJD7MDuunV/view?usp=sharing" download>Télécharger mon CV</a>
+          <a href="https://drive.google.com/file/d/1ThiIFKdhzAgaQP_vrHg0aTVJD7MDuunV/view?usp=sharing" target="_blanck" download>Télécharger mon CV</a>
         </div>
       </div>
       <div class="devphoto items">
@@ -45,38 +45,6 @@
         </transition>
       </div>
     </section>
-    <h2 id="projets" class="titlesection">Projets</h2>
-    <div class="divider"></div>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
 
   </div>
 </template>
@@ -101,24 +69,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.hello {
-  margin: 30px 10px 10px 10px;
-  background: url(../assets/body-bg.png);
-  padding: 10px;
-}
-.divider {
-  margin: 0 0 30px 0;
-  width: 100%;
-  height: 2px;
-  background: url(../assets/divider.png) repeat-x;
-  clear: both;
-}
-
-.titlesection {
-  text-align: left;
-  margin-bottom: 0;
-  font: 400 28px/50px "Bree Serif", Georgia, serif;
-}
 .apropos {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -158,9 +108,7 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #729fcf;
-}
+
 .logocompétence {
   width: 50px;
   margin: 10px 10px 10px 10px;
@@ -182,10 +130,6 @@ a {
 }
 
 @media (min-width: 1024px) {
-  .hello {
-    margin: 30px;
-    padding: 30px;
-  }
   .apropos {
     flex-direction: row;
   }

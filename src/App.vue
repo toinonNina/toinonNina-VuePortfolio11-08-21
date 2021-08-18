@@ -10,17 +10,20 @@
     </ul>
   </nav>
   <br><br>
-
-  <Home />
+  <div class="hello">
+    <Home />
+    <Projets />
+  </div>
 </template>
 
 <script>
 import Home from "@/section/Home.vue";
-
+import Projets from "@/section/Projets.vue";
 export default {
   name: "App",
   components: {
     Home,
+    Projets,
   },
 };
 </script>
@@ -41,7 +44,7 @@ body {
 }
 
 a {
-  color: #000;
+  color: #729fcf;
 }
 
 /* nav */
@@ -166,7 +169,29 @@ a {
 .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
+.hello {
+  margin: 30px 10px 10px 10px;
+  background: url(./assets/body-bg.png);
+  padding: 10px;
+}
+.divider {
+  margin: 0 0 30px 0;
+  width: 100%;
+  height: 2px;
+  background: url(./assets/divider.png) repeat-x;
+  clear: both;
+}
+.titlesection {
+  text-align: left;
+  margin-bottom: 0;
+  font: 400 28px/50px "Bree Serif", Georgia, serif;
+}
+@media (min-width: 1800px) {
+  .hello {
+    margin: 30px 380px;
+    padding: 30px;
+  }
+}
 @media (min-width: 930px) {
   .nav li {
     float: left;
