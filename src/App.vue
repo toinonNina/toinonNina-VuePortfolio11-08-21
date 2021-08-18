@@ -4,34 +4,38 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon">icon</span></label>
     <ul class="menu">
-      <li><a href="#work">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#careers">Mes travaux</a></li>
+      <li><a href="#propos">À propos</a></li>
+      <li><a href="#projets">Projets</a></li>
       <li><a href="#contact">Me contacter</a></li>
     </ul>
   </nav>
   <br><br>
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="hello">
+    <Home />
+    <Projets />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import Home from "@/section/Home.vue";
+import Projets from "@/section/Projets.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Home,
+    Projets,
   },
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #6a6969;
+  color: #a3a3a3;
+  font-size: 16px;
 }
 body {
   margin: 0;
@@ -40,7 +44,7 @@ body {
 }
 
 a {
-  color: #000;
+  color: #729fcf;
 }
 
 /* nav */
@@ -51,6 +55,7 @@ a {
   position: fixed;
   width: 100%;
   margin: 0;
+  z-index: 1;
 }
 
 .nav ul {
@@ -164,15 +169,36 @@ a {
 .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
-/* 48em = 768px */
-
-@media (min-width: 426px) {
+.hello {
+  margin: 30px 10px 10px 10px;
+  background: url(./assets/body-bg.png);
+  padding: 10px;
+}
+.divider {
+  margin: 0 0 30px 0;
+  width: 100%;
+  height: 2px;
+  background: url(./assets/divider.png) repeat-x;
+  clear: both;
+}
+.titlesection {
+  text-align: left;
+  margin-bottom: 0;
+  font: 400 28px/50px "Bree Serif", Georgia, serif;
+}
+@media (min-width: 1800px) {
+  .hello {
+    margin: 30px 380px;
+    padding: 30px;
+  }
+}
+@media (min-width: 930px) {
   .nav li {
     float: left;
   }
   .nav li a {
     padding: 20px 30px;
+    font-size: 16px;
   }
   .nav .menu {
     clear: none;
