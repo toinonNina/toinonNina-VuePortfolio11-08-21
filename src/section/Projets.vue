@@ -76,22 +76,9 @@ export default {
   padding: 0;
 }
 .criteria-list li {
-  cursor: context-menu;
-  background-color: #585656;
-  border-radius: 20px;
-  margin: 5px 5px 15px 5px;
-  color: white;
-  padding: 10px;
-  font-size: 14px;
   list-style: none;
-  width: 120px;
-  font-weight: 600;
 }
 
-.criteria-list li:hover {
-  background-color: #729fcf;
-  color: black;
-}
 .module {
   margin-bottom: 15px;
   transition: box-shadow 0.4s ease-in-out;
@@ -106,7 +93,7 @@ export default {
   }
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .container-flex {
     display: flex;
     flex-wrap: wrap;

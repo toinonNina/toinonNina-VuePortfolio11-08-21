@@ -30,10 +30,10 @@
     <section class="competences">
       <p> Un rapide aperçu des compétences acquises au cours de ma formation</p>
       <div class="svgcompétences">
-        <img class="logocompétence" src="../assets/competences/html5-svgrepo-com.svg" alt="" />
-        <img class="logocompétence" src="../assets/competences/css.svg" alt="" />
-        <img class="logocompétence" src="../assets/competences/javascript-seeklogo.com.svg" alt="" />
-        <img class="logocompétence" src="../assets/competences/sass-lang-ar21.svg" alt="" />
+        <img class="logocompétence filtergrey" src="../assets/competences/html5-svgrepo-com.svg" alt="" />
+        <img class="logocompétence filtergrey" src="../assets/competences/css.svg" alt="" />
+        <img class="logocompétence filtergrey" src="../assets/competences/javascript-seeklogo.com.svg" alt="" />
+        <img class="logocompétence filtergrey" src="../assets/competences/sass-lang-ar21.svg" alt="" />
         <br />
         <button class="voirplus" v-on:click="show = !show">
           Voir Plus

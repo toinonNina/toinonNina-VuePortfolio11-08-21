@@ -7,14 +7,14 @@
       </div>
       <div class="custom-icons">
         <a v-for="(link, platform) in preview" :key="platform.index" :href="link" target="_blank" rel="noopener">
-          <img class="preview-platform-icons" :src="require(`../assets/icons/${platform}.svg`)" :alt="`link for ${platform}`" />
+          <img class="preview-platform-icons filtergrey" :src="require(`../assets/icons/${platform}.svg`)" :alt="`link for ${platform}`" />
         </a>
       </div>
     </header>
     <p class="content" v-if="content">
       {{ content }}
     </p>
-    <div>
+    <div class="container-image">
       <img class="cover-image" :src="coverImage" :alt="`Screenshot of ${ projectName}`" @click="emitImage" />
     </div>
     <button v-if="read" @click="readMore" class="more">
@@ -85,8 +85,12 @@ export default {
   width: 100%;
   border-radius: 20px;
 }
+.container-image {
+  width: fit-content;
+  margin: auto;
+}
 .preview-platform-icons {
-  width: 30px;
+  width: 40px;
   margin: 15px 10px;
 }
 .title-type {
@@ -95,6 +99,9 @@ export default {
   flex-flow: column;
   justify-content: space-around;
 }
+.title-type h3 {
+  color: #729fcf;
+}
 .type-meta {
   background-color: #bdbbbb;
   border-radius: 20px;
@@ -102,10 +109,7 @@ export default {
   width: 150px;
   padding: 5px;
 }
-.type-meta:hover {
-  background-color: #bdbbbb;
-  background-blend-mode: darken;
-}
+
 .content {
   text-align: justify;
 }
@@ -120,6 +124,7 @@ export default {
   .cover-image {
     width: 100%;
     border-radius: 20px;
+    height: fit-content;
   }
 }
 </style>
