@@ -13,17 +13,24 @@
   <div class="hello">
     <Home />
     <Projets />
+    <Contact />
+
+  </div>
+  <div class="credit">
+    <p>© 2021. Par Nina Toinon . </p>
   </div>
 </template>
 
 <script>
 import Home from "@/section/Home.vue";
 import Projets from "@/section/Projets.vue";
+import Contact from "@/components/Contact.vue";
 export default {
   name: "App",
   components: {
     Home,
     Projets,
+    Contact,
   },
 };
 </script>
@@ -186,12 +193,16 @@ a {
   margin-bottom: 0;
   font: 400 28px/50px "Bree Serif", Georgia, serif;
 }
+.credit {
+  font-size: 12px;
+}
 @media (min-width: 1800px) {
   .hello {
     margin: 30px 380px;
     padding: 30px;
   }
 }
+
 @media (min-width: 930px) {
   .nav li {
     float: left;
@@ -207,6 +218,14 @@ a {
   }
   .nav .menu-icon {
     display: none;
+  }
+  .filtergrey {
+    filter: grayscale();
+    transition: filter 0.2s ease-in-out;
+  }
+
+  .filtergrey:hover {
+    filter: none;
   }
 }
 </style>

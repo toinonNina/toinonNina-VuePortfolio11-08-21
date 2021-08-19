@@ -30,10 +30,10 @@
     <section class="competences">
       <p> Un rapide aperçu des compétences acquises au cours de ma formation</p>
       <div class="svgcompétences">
-        <img class="logocompétence" src="../assets/competences/html5-svgrepo-com.svg" alt="" />
-        <img class="logocompétence" src="../assets/competences/css.svg" alt="" />
-        <img class="logocompétence" src="../assets/competences/javascript-seeklogo.com.svg" alt="" />
-        <img class="logocompétence" src="../assets/competences/sass-lang-ar21.svg" alt="" />
+        <img class="logocompétence filtergrey" src="../assets/competences/html5-svgrepo-com.svg" alt="" />
+        <img class="logocompétence filtergrey" src="../assets/competences/css.svg" alt="" />
+        <img class="logocompétence filtergrey" src="../assets/competences/javascript-seeklogo.com.svg" alt="" />
+        <img class="logocompétence filtergrey" src="../assets/competences/sass-lang-ar21.svg" alt="" />
         <br />
         <button class="voirplus" v-on:click="show = !show">
           Voir Plus
@@ -67,8 +67,9 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
+/*------------------------------Home--------------------------*/
 .apropos {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -119,14 +120,6 @@ li {
   border-radius: 10px;
   background-color: #729fcf;
   font-weight: 600;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
 }
 
 @media (min-width: 1024px) {

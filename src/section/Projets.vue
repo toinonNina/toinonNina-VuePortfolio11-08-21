@@ -8,8 +8,10 @@
           <FilterTags v-on:clicked="criteriaSeletion" :type="item" :state="selectedType === item" />
         </li>
       </ul>
-      <div class="project-holder" v-for="project in filterProject" :key="project.index">
-        <ProjectModule v-on:emitImage="imagePreview" :title="Object.keys(project).toString()" :preview="project[Object.keys(project).toString()].preview_links" :type="project[Object.keys(project).toString()].category" :read="project[Object.keys(project).toString()].article" :coverImage="project[Object.keys(project).toString()].image" :content="project[Object.keys(project).toString()].content" class="module" />
+      <div class="container-flex">
+        <div class="project-holder" v-for="project in filterProject" :key="project.index">
+          <ProjectModule v-on:emitImage="imagePreview" :title="Object.keys(project).toString()" :preview="project[Object.keys(project).toString()].preview_links" :type="project[Object.keys(project).toString()].category" :read="project[Object.keys(project).toString()].article" :coverImage="project[Object.keys(project).toString()].image" :content="project[Object.keys(project).toString()].content" class="module" />
+        </div>
       </div>
     </div>
   </div>
@@ -52,10 +54,12 @@ export default {
 };
 </script>
 <style scoped>
+/*------------------------------Projet affichage--------------------------*/
 .project-holder {
   display: flex;
   justify-content: center;
 }
+
 .project-container {
   display: flex;
   flex-flow: column nowrap;
@@ -72,22 +76,9 @@ export default {
   padding: 0;
 }
 .criteria-list li {
-  cursor: context-menu;
-  background-color: #929090;
-  border-radius: 20px;
-  margin: 5px 5px 15px 5px;
-  color: white;
-  padding: 10px;
-  font-size: 14px;
   list-style: none;
-  width: 120px;
-  font-weight: 600;
 }
 
-.criteria-list li:hover {
-  background-color: #729fcf;
-  color: black;
-}
 .module {
   margin-bottom: 15px;
   transition: box-shadow 0.4s ease-in-out;
@@ -98,7 +89,27 @@ export default {
 
 @media (min-width: 930px) {
   .project-container {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-holder {
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 50%;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .project-container {
+    width: auto;
+    margin: 5px;
   }
 }
 </style>
