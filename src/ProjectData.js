@@ -111,18 +111,7 @@ export default [{
             image: "https://i.ibb.co/XW88DQF/What-about-us.png",
             favorite: "Favorites",
         },
-    },
-    {
-        Spoilers: {
-
-            category: "Graphic Design",
-            preview_links: {
-                deviantart: "https://www.deviantart.com/zazeal/art/spoilers-889182050",
-            },
-            image: "https://i.ibb.co/kgt43cg/avatar.png"
-        },
-    },
-    {
+    }, {
         Adobe_magic: {
 
             category: "Graphic Design",

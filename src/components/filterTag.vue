@@ -1,6 +1,6 @@
 <template>
   <div @click="$emit('clicked', type)" :class="state ? 'type-meta-active' : 'type-meta'">
-    {{ type }} <img class="fav" v-if="type === 'Favorites'" src="../assets/icons/star-solid.svg" alt="favorites" />
+    {{ type }} <img class="fav" v-if="type === 'Favorites'" src="../assets/icons/star-solid.svg" alt="projets favoris" />
   </div>
 </template>
 

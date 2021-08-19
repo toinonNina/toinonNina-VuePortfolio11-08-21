@@ -79,13 +79,15 @@ export default {
 };
 </script>
 <style scoped>
+/*------------------------------Projet module--------------------------*/
 .cover-image {
+  margin-top: 20px;
   width: 100%;
   border-radius: 20px;
 }
 .preview-platform-icons {
   width: 30px;
-  margin-top: 15px;
+  margin: 15px 10px;
 }
 .title-type {
   display: flex;
@@ -116,7 +118,7 @@ export default {
     justify-content: space-around;
   }
   .cover-image {
-    width: 60%;
+    width: 100%;
     border-radius: 20px;
   }
 }
