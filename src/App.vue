@@ -79,13 +79,17 @@ a {
   padding: 20px 20px;
   text-decoration: none;
 }
+
+.nav li a:hover {
+  color: #3c84d1;
+}
 /*Animation li menu*/
 .nav li a::after {
   content: "";
   display: block;
   width: 100%;
   height: 2px;
-  background: white;
+  background: #3c84d1;
   margin-top: 4px;
   opacity: 0;
 }
@@ -192,6 +196,7 @@ a {
   text-align: left;
   margin-bottom: 0;
   font: 400 28px/50px "Bree Serif", Georgia, serif;
+  color: #3c84d1;
 }
 .credit {
   font-size: 12px;

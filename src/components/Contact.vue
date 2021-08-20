@@ -1,5 +1,5 @@
 <template>
-  <h2 id="propos" class="titlesection">Contact</h2>
+  <h2 id="contact" class="titlesection">Contact</h2>
   <div class="divider"></div>
   <section class="contact">
     <div class="container-contact">

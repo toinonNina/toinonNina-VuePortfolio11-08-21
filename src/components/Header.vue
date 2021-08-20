@@ -25,7 +25,7 @@ export default {
 }
 .container span,
 h1 {
-  color: white;
+  color: #3c84d1;
   text-transform: uppercase;
   display: block;
 }
