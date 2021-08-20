@@ -4,7 +4,7 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon">icon</span></label>
     <ul class="menu">
-      <li><a href="#propos">À propos</a></li>
+      <li><a href="#propos">À propos de moi</a></li>
       <li><a href="#projets">Projets</a></li>
       <li><a href="#contact">Me contacter</a></li>
     </ul>
