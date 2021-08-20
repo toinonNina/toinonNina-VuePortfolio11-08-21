@@ -11,11 +11,11 @@
         <p>Developper web </p>
         <div class="presentation">
           <p>
-            Bonjour, Je suis anciennement diplomée d'un CAP vente et d'une certification d'agent de montage cablage en électronique.
-            J'ai souhaiter me réorienter dans un domaine qui me plait davantage et dans lequel je m'était déja plonger par simple loisir : Le développement web . <br />
-            autodidacte, j'ai commencé par apprendre l'utilisation de photoshop, et de la création de photomontage, puis au fur et a mesure je me suis tourné vers la customisation via le codage.
-            j'ai réalisé pour un groupe d'écriture auquel je faisait partie un site internet de présentation.
-            J'ai décider d'allier mon loisir dans le domaine professionnel et pour cela j'ai fait une formation de dévellopeuse web chez openclassrooms. Sur ce portfolio voici mes réalisations .
+            Bonjour, Je suis anciennement diplomée d'un CAP vente et d'une certification d'agent de montage câblage en électronique.
+            J'ai souhaité me réorienter dans un domaine qui me plait davantage et dans lequel je m'étais déja plongée par simple loisir : Le développement web . <br />
+            Autodidacte, j'ai commencé par apprendre l'utilisation de photoshop, et la création de photomontage, puis au fur et à mesure je me suis tournée vers la customisation via le codage.
+            J'ai réalisé pour un groupe d'écriture dont je faisait partie un site internet de présentation.
+            J'ai décidé d'allier mon loisir au domaine professionnel et pour cela j'ai fait une formation de dévellopeuse web chez Openclassrooms. Sur ce portfolio voici mes réalisations .
             Je suis une personne motivée, patiente, avec une capacité d'adaptation, d'autonomie et capable de travailler en équipe.
           </p><br />
           <a href="https://drive.google.com/file/d/1ThiIFKdhzAgaQP_vrHg0aTVJD7MDuunV/view?usp=sharing" target="_blanck" download>Télécharger mon CV</a>
