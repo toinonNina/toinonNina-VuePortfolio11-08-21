@@ -5,6 +5,7 @@
     <img class="logocompétence filtergrey" src="../assets/competences/mysql-ar21.svg" alt="" />
     <img class="logocompétence filtergrey" src="../assets/competences/mongodb-ar21.svg" alt="" />
     <img class="logocompétence filtergrey" src="../assets/competences/vuejs-icon.svg" alt="" />
+    <img class="logocompétence filtergrey" src="../assets/competences/getbootstrap-icon.svg" alt="" />
     <img class="logocompétence filtergrey " src="../assets/competences/Git_icon.svg" alt="" />
     <img class="logocompétence filtergrey " src="../assets/competences/github-ar21.svg" alt="" />
     <img class="logocompétence filtergrey" src="../assets/competences/w3c-tile.svg" alt="" />
