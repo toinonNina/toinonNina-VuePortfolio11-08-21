@@ -2,7 +2,7 @@ export default [{
         groupomania: {
 
             category: "Codage",
-            content: "Groupomania est un MVP d'un réseau social d'entreprise pour répondre aux problèmes de communication entre salaraié de façon non conventionnel, limité également les échanges seulement par email et favorisé plus d'échanges entres les salariés de chaque département. Projet réaliser dans le cadre de ma formation développeur Web. ",
+            content: "Groupomania est un MVP d'un réseau social d'entreprise pour répondre aux problèmes de communication entre salariés de façon non conventionnelle, limiter également les échanges seulement par email et favoriser plus d'échanges entres les salariés de chaque département. Projet réaliser dans le cadre de ma formation développeur Web. ",
             preview_links: {
                 github: "https://github.com/toinonNina/ToinonNina_7_30-06-21",
             },
@@ -14,7 +14,7 @@ export default [{
         So_Pekocko: {
 
             category: "Codage",
-            content: "So Pekocko est une entreprise familiale de 10 salariés, son activité principale est la création de sauces piquantes, forte de son succès, l'entreprise a souhaiter développer et créer une application web dans laquelle les utilisateurs pourront ajouter leurs sauces préférées et liker ou disliker les sauces proposées par les autres. Projet réaliser dans le cadre de ma formation développeur Web.",
+            content: "So Pekocko est une entreprise familiale de 10 salariés, son activité principale est la création de sauces piquantes, forte de son succès, l'entreprise a souhaité développer et créer une application web dans laquelle les utilisateurs pourront ajouter leurs sauces préférées et liker ou disliker les sauces proposées par les autres. Projet réaliser dans le cadre de ma formation développeur Web.",
             preview_links: {
                 github: "https://github.com/toinonNina/ToinonNina_6_22-05-21",
             },
@@ -25,7 +25,7 @@ export default [{
     {
         Oniroco: {
             category: "Codage",
-            content: "Oniroco est une entreprise qui souhaite se démarquer des grands site e-commerce comme Amazon en créant des applications thématiques ne vendant qu’un seul groupe de produits. Il y a par exemple Oribook pour les livres ou Oritextil pour les vêtements. Un MVP pour la vente d'ourson en peluche a été demandé. Projet réaliser dans le cadre de ma formation développeur Web .",
+            content: "Orinoco est une entreprise qui souhaite se démarquer des grands sites e-commerce comme Amazon en créant des applications thématiques ne vendant qu’un seul groupe de produits. Il y a par exemple Oribook pour les livres ou Oritextil pour les vêtements. Un MVP pour la vente d'oursons en peluche a été demandé. Projet réaliser dans le cadre de ma formation développeur Web .",
             preview_links: {
                 github: "https://github.com/toinonNina/ToinonNina_5_15-03-21",
             },
@@ -36,7 +36,7 @@ export default [{
         La_Chouette_Agence: {
 
             category: "Codage",
-            content: "La chouette agence est une agence de web design basée à Lyon, la mission était d'optimiser leurs site en l'analysant, l'améliorant et faire un comparatif Avant /Aprés.Projet réaliser dans le cadre de ma formation développeur Web .",
+            content: "La chouette agence est une agence de web design basée à Lyon, la mission était d'optimiser leur site en l'analysant, l'améliorant et de faire un comparatif Avant /Aprés.Projet réaliser dans le cadre de ma formation développeur Web .",
             preview_links: {
                 github: "https://github.com/toinonNina/ToinonNina_4_06-02-21",
                 live: "https://toinonnina.github.io/ToinonNina_4_06-02-21/"
@@ -61,7 +61,7 @@ export default [{
         réservia: {
 
             category: "Codage",
-            content: "Réservia est une petite entreprise proposant un outil de planification de vacances. Un prototype d'un nouveau design a été développé. Afin de valider ce design une intégration de maquette responsive a été réalisée. Projet réalisé dans le cadre de ma formation développeur Web.",
+            content: "Réservia est une petite entreprise proposant un outil de planification de vacances. Un prototype pour un nouveau design a été développé. Afin de valider ce design une intégration de maquette responsive a été réalisée. Projet réalisé dans le cadre de ma formation développeur Web.",
             preview_links: {
                 github: "https://github.com/toinonNina/ToinonNina_2_15122020",
                 live: "https://toinonnina.github.io/ToinonNina_2_15122020/",
