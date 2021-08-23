@@ -8,7 +8,7 @@
 
       <div class="titlehome items">
         <h3>Nina Toinon</h3>
-        <p>Developper web </p>
+        <p>Developpeuse web </p>
         <div class="presentation">
           <p>
             Bonjour, Je suis anciennement diplomée d'un CAP vente et d'une certification d'agent de montage câblage en électronique.
